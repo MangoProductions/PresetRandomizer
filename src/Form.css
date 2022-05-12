@@ -1,0 +1,86 @@
+
+
+.form {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    width: 100%
+}
+
+.row {
+    flex-direction: column;
+}
+.minirow {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    opacity: 1;
+  animation: fadein 1.1s;
+}
+
+.form {
+    display: block;
+  }
+  .form.out{
+    display: none;
+  }
+  .Lefty-Righty{
+    direction: row;
+    justify-content: space-around;
+    
+    font-size: 16px;
+    letter-spacing: 5px;
+    box-shadow: 2px 2px 60px 3px #A37C40 inset;
+    box-shadow: 2px 2px 60px 3px #B49082;
+    margin-top: 10px;
+}
+.Lefty-Righty-Row{
+    flex-direction: row;
+    justify-content: space-around;
+    
+    font-size: 16px;
+    letter-spacing: 5px;
+    box-shadow: 2px 2px 60px 3px #A37C40 inset;
+    box-shadow: 2px 2px 60px 3px #B49082;
+    margin-top: 10px;
+}
+
+  
+  .Lefty-Righty .uno{
+    background-image: url("./images/wiringuno.png");
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+.Lefty-Righty .dos{
+  background-image: url("./images/wiringdos.png");
+  background-position: center; 
+  background-repeat: no-repeat;
+}
+
+input {
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+    font-size: 20px;
+    border: 0px;
+    background-color: #B49082;
+    margin-left: 11px;
+    margin-right: 11px;
+    box-shadow: 2px 2px 6px 2px #A37C40;
+}
+.set{
+    flex-direction: column;
+    visibility:hidden;
+    color: #D6C3C9;
+}
+.set.done{
+    visibility:visible;
+    transition: 3s;
+    padding-bottom: 12px;
+    color: #282c34;
+    text-align: center;
+    background-color:#A37C40;
+    width: 100px;
+    padding-left: 50%;
+}
